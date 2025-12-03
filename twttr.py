@@ -1,16 +1,10 @@
 def main():
-    word = input("Input: ")
-    print("Output:", shorten(word))
-
-
-def shorten(word):
-    vowels = "aeiouAEIOU"
+    text = input("Input: ")
+    vowels = "AEIOUaeiou"
     result = ""
-    for char in word:
+    for char in text:
         if char not in vowels:
             result += char
-    return result
-
-
+    print(f"Output: {result}")
 if __name__ == "__main__":
-    main()
+    main() 
